@@ -1,0 +1,857 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+body{
+
+  background-image: url(../Images/background.jpg);
+  background-color:rgba(255, 255, 255, 0.326);
+  background-blend-mode:lighten;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+   margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 影の設定 */
+ 
+}
+header{
+font-weight: bold;
+   text-align: center;
+   background-color: rgba(248, 128, 148, 0.53);
+}
+header a {
+  transition: color 0.3s; /* 色の変化をアニメーション化 */
+}
+header a:hover {
+  color: #5a1010; /* マウスオーバー時の色 */
+}
+.box{
+   font-size: 25px;
+   padding: 2% 0% 2% 0%;
+}
+.box a:hover{
+  color: #5a1010; /* マウスオーバー時の色 */
+}
+ul.list {
+   list-style-type: none;
+   padding: 0;
+   margin: 0 auto; /* 左右の余白を自動的に調整してセンターに配置 */
+   display: inline-block; /* バーを横並びにするために必要な属性 */
+   }
+   
+   li {
+      display: inline-block;
+      margin-right: 60px; /* バーの間のスペースを調整 */
+
+   }
+   a{
+      color: black;
+      text-decoration: none;
+   }
+   .logo{
+    max-width: 150px;
+    border-radius: 50%;
+    transition: 1.0s ;
+   }
+  
+  .logo:hover {
+    opacity: 0.7 ;
+  }
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  rgba(248, 128, 148, 0.53);
+    z-index: 1;
+    border-radius: 0px 0px 10px 10px; 
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li {
+    display: block;
+  }
+  .dropdown-content li:hover {
+    background-color:  rgba(237, 87, 112, 0.53);
+    margin: 0 auto; /* 左右の余白を自動的に調整してセンターに配置 */
+  }
+  .cart-img{
+    max-width: 40px;
+  margin-left: 100%;
+  transition: 1.0s ;
+  }
+  .cart-img:hover {
+    opacity: 0.5 ;
+  }
+/*main page*/
+.slide {
+  position:relative;
+  height:900px;
+  margin-top: 5%;
+
+}
+.slide img {
+  position: absolute;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  max-height: 80%;
+  max-width: 80%;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*熱門商品*/
+.recommend {
+  background-color:rgba(248, 128, 148, 0.53);
+  border-radius: 10px;
+  padding: 2em;
+  margin: 0% 5% 10% 5%;
+  text-align: center;
+   transition: 0.5s ease-in-out;
+}
+.recommend:hover{
+  background-color: rgb(235, 126, 144);
+  color: #fff;
+}
+
+.recommend-title{
+  font-size: 55px;
+  margin: 4%;
+}
+
+.snack-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  text-align: center;
+ 
+  font-size: 20px;
+
+}
+
+
+.item img {
+  height: auto;
+  transition: 1.0s ;
+}
+.item img:hover {
+  opacity: 0.5 ;
+}
+/*網頁簡介*/
+.profile {
+  background-color: #ffffff8a;
+  margin: 4% 15%;
+  padding-top: 2%;
+  border-radius: 100px;
+  transition: 0.5s ease-in-out;
+}
+.profile:hover{
+ background-color: rgb(255, 255, 255);
+ color: rgb(178, 61, 81);
+}
+.title-profile{
+  margin-top: 4%;
+  font-size: 55px;
+  text-align: center;
+  
+}
+.profile-word{
+  font-size: 25px;
+  padding: 4% 10%;
+
+}
+.cookie-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 20%;
+  text-align: center;
+  margin: 5%;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  transition: 1.0s ;
+}
+.item img:hover {
+  opacity: 0.5 ;
+}
+.item p {
+  transition: color 0.3s; /* 色の変化をアニメーション化 */
+}
+.item p:hover {
+  color: #fff; /* マウスオーバー時の色 */
+}
+/*商品一欄*/
+.products-title{
+  font-size: 55px;
+  padding-left: 3%;
+
+}
+
+.products{
+  border: 3px solid #fff;
+  margin: 4% 10%;
+  background-color: #cccccc9a;
+
+  transition: 0.5s ease-in-out;
+  
+}
+.products:hover{
+  background-color: #b4a7a7;
+
+}
+.products-1{
+  border: 3px solid #a058fe;
+  margin: 4% 10% ;
+  background-color: #a058fe4c;
+
+  transition: 0.5s ease-in-out;
+  
+}
+.products-1:hover{
+  background-color: #ba88fbfd;
+
+}
+.products-2{
+  border: 3px solid #a0561d;
+  margin: 4% 10% ;
+background-color: #a0561d6b;
+
+transition: 0.5s ease-in-out;
+
+}
+.products-2:hover{
+background-color: #e5863d;
+
+}
+.products-3{
+  border: 3px solid #f8ff2d;
+  margin: 4% 10%;
+  background-color: #f8ff2d4d;
+
+  transition: 0.5s ease-in-out;
+  
+}
+.products-3:hover{
+  background-color: #cfd269;
+
+}
+
+
+.products-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.products-item {
+  width: 20%;
+  text-align: center;
+  font-size: 25px;
+}
+.products-item p {
+  transition: color 0.3s; /* 色の変化をアニメーション化 */
+}
+.products-item p:hover {
+  color: #fff; /* マウスオーバー時の色 */
+}
+
+.products-item img {
+  width: 100%;
+  height: auto;
+  transition: 1.0s ;
+}
+.products-item img:hover {
+  opacity: 0.5 ;
+}
+/*product-detail*/
+
+.product-detail{
+  margin: 4% 10% 4% 10%;
+  padding: 50px;
+background-color: #e8f6ff9b;
+  border: 3px solid #fff;
+  border-radius: 50px;
+}
+.product-detail img {
+  width:30%;
+  float: left;
+}
+.product-name{
+  font-size: 50px;
+  margin-left: 10%;
+  text-decoration: underline;
+}
+.product-price,.product-number{
+  font-size: 35px;
+  padding-left: 20%;
+}
+.product-NT{
+  font-size: 35px;
+  margin-left: 30%;
+  color: #333;
+}
+.how-many{
+  font-size: 35px;
+  margin-left: 30%;
+  color: #333;
+}
+ /* 入力フィールドの幅を調整 */
+ .how-many input[type="number"] {
+  width: 50px; /* 幅を指定 */
+  font-size: 35px;
+}
+.explanation{
+  font-size: 30px;
+  padding-left: 20%;
+}
+.explanation-word{
+  display: flex;
+  margin-left: 55%;
+  font-size: 20px;
+}
+
+.add-cart{
+ margin-left:90%;
+  padding: 10px;
+  background-color: pink;
+  border-radius: 5px;
+}
+.add-cart:hover{
+  background-color: rgb(255, 123, 145);
+}
+.review-column{
+  display: flex;
+  background-color: #e8f6ff9b;
+  margin: 5%;
+  padding-bottom: 5%;
+  border-radius: 50px;
+  border: 3px solid #fff
+}
+
+.review,.customer-reviews{
+  flex: 1;
+}
+.review{
+  margin: 5% 50% 0% 10%;
+  background-color: rgba(248, 128, 148, 0.53);
+  max-height: 500px;
+  border-radius: 15px;
+}
+
+.review-title{
+  background-color: rgba(244, 106, 129, 0.497);
+  font-size: 40px;
+text-align: center;
+margin-bottom: 40px;
+border-radius:  15px 15px 0px 0px;
+}
+
+.content{
+padding-left: 5%;
+  font-size: 30px;
+}
+.stars{
+margin-left: 25%;
+
+}
+.stars span{
+  display: flex;               /* 要素をフレックスボックスにする */
+  flex-direction: row-reverse; /* 星を逆順に並べる */
+  justify-content: flex-end;   /* 逆順なので、左寄せにする */
+}
+
+.stars input[type='radio']{
+  display: none;               /* デフォルトのラジオボタンを非表示にする */
+}
+
+.stars label{
+  color: #fff;              
+  font-size: 40px;             /* 星の大きさを30pxに指定 */
+  padding: 0 5px;              /* 左右の余白を5pxに指定 */
+  cursor: pointer;             /* カーソルが上に乗ったときに指の形にする */
+}
+
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input[type='radio']:checked ~ label{
+  color: #ffde59;              /* 選択された星以降をすべて黄色にする */
+}
+
+.write-content{
+  height: 200px;
+  width: 450px;
+  resize: vertical; /* 垂直方向のリサイズを許可 */
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.send{
+  background-color: pink;
+
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.cancel{
+  background-color: pink;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.send:hover, .cancel:hover{
+  background-color: rgb(255, 123, 145);
+}
+.review-button{
+  margin-left: 70%;
+}
+
+.stars-1{
+  color: #ffde59;             
+  font-size: 30px;        
+  padding: 0 1px;              
+  cursor: pointer;            
+}
+
+.stars-2{
+  color: #fff;            
+  font-size: 30px;        
+  padding: 0 1px;              
+  cursor: pointer;            
+}
+.customer-reviews{
+  background-color: rgba(248, 128, 148, 0.53);
+  text-align: center;
+  margin: 5% 50% 0% -40%;
+  border-radius: 15px;
+  padding-bottom: 4%;
+ 
+}
+.customer-title{
+  background-color: rgba(244, 106, 129, 0.497);
+  font-size: 40px;
+text-align: center;
+margin-bottom: 40px;
+width: 400px;
+border-radius: 15px;
+border-radius:  15px 15px 0px 0px;
+}
+.customer-name{
+  font-size: 30px;
+  margin-top:40px;
+}
+.customer-comment{
+  font-size: 20px;
+}
+
+  /*關於我們*/
+  .about-us{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+  }
+  .info-bg{
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10%;
+    border-radius: 100px;
+    transition: 0.5s ease-in-out;
+  }
+  .info-bg:hover{
+   background-color: rgb(255, 255, 255);
+   color: rgb(178, 61, 81);
+  }
+  .info {
+    display: flex;
+    
+  }
+ 
+  .own-info{
+    text-align: center; /* 文字を中央揃え */
+    transition: 1.0s ;
+    margin-bottom: 10%;
+ 
+  }
+  
+  .own-img  {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    
+  }
+ 
+  .own-info:hover {
+  opacity: 0.6 ;
+}
+
+  
+  .sns{
+    width: 10%;
+  }
+  .own-info p {
+  font-size: 30px;
+    
+  }
+  .about-store-info{
+    background-color:rgba(248, 128, 148, 0.53);
+    display: flex;
+    margin: 10%;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+  }
+  .about-store-info:hover{
+   background-color: rgb(235, 126, 144);
+   color: rgb(255, 255, 255);
+  }
+  .google-maps,.store-info{
+    flex: 1; /* 等しい幅で横に並べる */
+  }
+
+  .google-maps{
+    position: relative;
+    margin: 5%;
+
+  }
+
+ .google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-us{
+  font-size: 50px;
+}
+.store-info{
+  margin: 5%;
+  font-size: 25px;
+}
+.contact-name{
+  border-radius: 10px;
+}
+.write-content-2{
+  height: 300px;
+  width: 100%;
+  resize: vertical; /* 垂直方向のリサイズを許可 */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/*member-info*/
+.record{
+  background-color: rgba(248, 128, 148, 0.53);
+  margin: 0% 10% 10% 10%;
+  padding: 2%;
+  border-radius: 50px;
+}
+.record-title{
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+}
+    .purchase-part{
+      background-color: #ffffff7d;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .purchase-part-name{
+      font-size: 30px;
+      margin-top: 5%;
+      padding: 10px;
+      margin-left: 260px;
+    }
+    .purchase-part-price{
+      font-size: 30px;
+      margin-top: 5%;
+      padding: 10px;
+      margin-left: 170px;
+    }
+    .purchase-part-number{
+      font-size: 30px;
+      margin-top: 5%;
+      padding: 10px;
+      margin-left: 120px;
+    }
+    .purchase-part-total{
+      font-size: 30px;
+      margin-top: 5%;
+      padding: 10px;
+      margin-left: 100px;
+    }
+    .purchase-image{
+      display: flex;
+      padding: 10px;
+    }
+    .purchase-image img{
+      width: 200px;
+      height: auto;
+
+    }
+    
+
+.purchase-name{
+  font-size: 40px;
+  margin-top: 5%;
+  padding: 10px;
+  margin-left: 40px;
+}
+.purchase-price{
+  font-size: 40px;
+  margin-top: 5%;
+  padding: 10px;
+  margin-left: 40px;
+}
+.purchase-number{
+  font-size: 40px;
+  margin-top: 5%;
+  padding: 10px;
+  margin-left: 100px;
+}
+.purchase-number-2{
+  font-size: 40px;
+  margin-top: 5%;
+  padding: 10px;
+  margin-left: 85px;
+}
+.purchase-total{
+  font-size: 40px;
+  margin-top: 5%;
+  padding: 10px;
+  margin-left: 100px;
+}
+     /*login , sign up and member-info*/
+
+   .login,.signup,.memberinfo{
+    font-size: 50px;
+      text-align: center;
+      margin: 5% 0% 5% 0%;
+    }
+    
+    .container {
+      width: 30%;
+      margin: 0 auto;
+      margin-top: 4%;
+      margin-bottom: 4%;
+      padding: 20px;
+      background-color: #ffffffb3;
+ 
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"]{
+      width: 94%;
+      padding: 10px;
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 100%;
+    }
+    
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: pink;
+      color: #333;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: rgb(252, 167, 181);
+    }
+  
+    .sign-up,.log-in{
+      margin-left: 5%;
+      font-size: 20px;
+      color: blue;
+    }
+    .sign-up:hover,.log-in:hover{
+      color: #1d6494; /* マウスオーバー時のリンクの色 */
+    }
+
+    /*cart*/
+    .cart{
+      background-color: rgba(248, 128, 148, 0.53);
+      margin: 4% 10% 10% 10%;
+      border-radius: 15px;
+      padding: 10px;
+    }
+    .cart-title{
+      font-size: 60px;
+      text-align: center;
+      margin: 30px;
+    }
+    .cart-part{
+      background-color: #fff;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    
+    .part-name{
+      font-size: 30px;
+      margin-top: 5%;
+      padding: 10px;
+      margin-left: 320px;
+    }
+    .part-price{
+      font-size: 30px;
+      margin-top: 5%;
+      padding: 10px;
+      margin-left: 270px;
+    }
+    .part-number{
+      font-size: 30px;
+      margin-top: 5%;
+      padding: 10px;
+      margin-left: 90px;
+    }
+    .cart-image{
+      display: flex;
+      margin-left: 100px;
+      padding: 10px;
+    }
+    .cart-image img{
+      width: 200px;
+      height: auto;
+
+    }
+    
+.cart-image input[type="number"] {
+  width: 60px;
+  height: 30px;
+  margin-top: 6.7%;
+}
+
+.cart-image button.remove {
+  background-color: #f56359;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  margin-top: 6.7%;
+  margin-left: 5%;
+  padding: 10px 10px 35px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}.cart-image button.remove:hover{
+  background-color: rgb(239, 9, 9);
+}
+.cart-name{
+  font-size: 40px;
+  margin-top: 5%;
+  padding: 10px;
+  margin-left: 40px;
+}
+.cart-price{
+  font-size: 40px;
+  margin-top: 5%;
+  padding: 10px;
+  margin-left: 80px;
+}
+.cart-price-2{
+  font-size: 40px;
+  margin-top: 5%;
+  padding: 10px;
+  margin-left: 68px;
+}
+.cart-number{
+  font-size: 40px;
+  margin-top: 5%;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.cart-total {
+  border-top: 5px solid #dc0000;
+  
+  text-align: right;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding-right: 100px;
+ 
+}
+.total{
+  
+  font-size: 40px;
+  color:#fff;
+}
+.write-info{
+  font-size: 60px;
+  text-align: center;
+}
+  .user-info{
+    background-color:  rgba(248, 128, 148, 0.53);
+    margin: 10%;
+    border-radius: 15px;
+    padding: 3% 10% 3% 10%;
+  }
+  .user-info p{
+    font-size: 30px;
+  }
+  
+.payment {
+   background-color: pink;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 700px;
+  border-radius: 10px;
+  font-size: 25px;
+
+  
+}
+.payment:hover{
+background-color: rgb(255, 123, 145);
+} 
+.top{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+}
+.top img{
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+.top img:hover{
+  opacity: 0.6;
+}
+/*copyright*/
+    footer {
+      text-align: center; /* テキストを中央寄せにする */
+      padding:  60px 0px 30px 0px; /* フッター内の余白を追加 */
+  
+      font-size: 25px;
+      background-color: rgba(248, 128, 148, 0.53);
+   }
+
+
+
+
+
+   
